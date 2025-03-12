@@ -188,12 +188,12 @@
             }
         }
 
-        // Set up auto-refresh (every 5 seconds)
+        // Set up auto-refresh (every 60 seconds)
         let autoRefreshInterval;
 
         function startAutoRefresh() {
             fetchADAPrice(); // Fetch immediately
-            autoRefreshInterval = setInterval(fetchADAPrice, 5000); // Then every minute
+            autoRefreshInterval = setInterval(fetchADAPrice, 60000); // Then every minute
         }
 
         // Event listener for refresh button
